@@ -34,6 +34,6 @@ public static WebDriver StartApplication(WebDriver driver,String Browsername, St
 		return driver;
 }	
 public static void quitBrowser(WebDriver driver) {
-	driver.quit();	
+driver.quit();	
 }
 }
