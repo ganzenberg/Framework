@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Setting up the test]]>
+    </line>
+    <line>
+      <![CDATA[Test started]]>
+    </line>
+    <line>
+      <![CDATA[Browser started]]>
+    </line>
+    <line>
+      <![CDATA[Testing in progress]]>
+    </line>
+    <line>
+      <![CDATA[Last stage of testing]]>
+    </line>
+    <line>
+      <![CDATA[Testing completed]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-12-19T16:13:02 IST" name="Suite" finished-at="2021-12-19T16:13:24 IST" duration-ms="22597">
+    <groups>
+    </groups>
+    <test started-at="2021-12-19T16:13:02 IST" name="Test" finished-at="2021-12-19T16:13:24 IST" duration-ms="22597">
+      <class name="com.testcases.Testcase1">
+        <test-method is-config="true" signature="setupsuite()[pri:0, instance:com.testcases.Testcase1@1d2bd371]" started-at="2021-12-19T16:13:01 IST" name="setupsuite" finished-at="2021-12-19T16:13:02 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Setting up the test]]>
+            </line>
+            <line>
+              <![CDATA[Test started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setupsuite -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.testcases.Testcase1@1d2bd371]" started-at="2021-12-19T16:13:02 IST" name="setup" finished-at="2021-12-19T16:13:09 IST" duration-ms="7144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.amazon.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser started]]>
+            </line>
+            <line>
+              <![CDATA[Testing in progress]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginApp()[pri:0, instance:com.testcases.Testcase1@1d2bd371]" started-at="2021-12-19T16:13:09 IST" name="loginApp" finished-at="2021-12-19T16:13:14 IST" duration-ms="5180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method is-config="true" signature="teardDownMethod(org.testng.ITestResult)[pri:0, instance:com.testcases.Testcase1@1d2bd371]" started-at="2021-12-19T16:13:14 IST" name="teardDownMethod" finished-at="2021-12-19T16:13:17 IST" duration-ms="2438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=Testcase1.loginApp()[pri:0, instance:com.testcases.Testcase1@1d2bd371] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Last stage of testing]]>
+            </line>
+            <line>
+              <![CDATA[Testing completed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- teardDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.Testcase1@1d2bd371]" started-at="2021-12-19T16:13:17 IST" name="tearDown" finished-at="2021-12-19T16:13:24 IST" duration-ms="7808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcases.Testcase1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

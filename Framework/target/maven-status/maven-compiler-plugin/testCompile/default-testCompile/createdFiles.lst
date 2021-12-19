@@ -1,0 +1,7 @@
+utilities\Helper.class
+utilities\ConfigDataProvider.class
+com\testcases\Testcase1.class
+utilities\ExcelDataProvider.class
+com\pages\BaseClass.class
+com\pages\loginPage.class
+utilities\Browserfactory.class
