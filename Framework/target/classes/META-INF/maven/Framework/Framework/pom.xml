@@ -54,12 +54,9 @@
     <artifactId>extentreports</artifactId>
     <version>5.0.8</version>
 </dependency>
-
-    
-  </dependencies>
-  
-  <build>
-  <plugins>
+</dependencies>
+<build>
+<plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
@@ -69,11 +66,12 @@
             <suiteXmlFile>XML files/testng.xml</suiteXmlFile>
           </suiteXmlFiles>
           <systemPropertyVariables>
-          <executionBrowser>${browser}</executionBrowser>
-          <appurl>${TestURL}</appurl>
+          <appbrowser>${browser}</appbrowser>
+          <appUrl>${appUrl}</appUrl>
+          
           </systemPropertyVariables>
         </configuration>
       </plugin>
 </plugins>
-  </build>
-</project>
+</build>
+ </project>

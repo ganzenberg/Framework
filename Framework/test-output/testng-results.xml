@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
     <line>
       <![CDATA[Setting up the test]]>
@@ -7,25 +7,13 @@
     <line>
       <![CDATA[Test started]]>
     </line>
-    <line>
-      <![CDATA[Browser started]]>
-    </line>
-    <line>
-      <![CDATA[Testing in progress]]>
-    </line>
-    <line>
-      <![CDATA[Last stage of testing]]>
-    </line>
-    <line>
-      <![CDATA[Testing completed]]>
-    </line>
   </reporter-output>
-  <suite started-at="2021-12-13T18:20:07 IST" name="Default suite" finished-at="2021-12-13T18:20:47 IST" duration-ms="39138">
+  <suite started-at="2022-01-07T11:37:18 IST" name="Default suite" finished-at="2022-01-07T11:37:18 IST" duration-ms="63">
     <groups>
     </groups>
-    <test started-at="2021-12-13T18:20:07 IST" name="Default test" finished-at="2021-12-13T18:20:47 IST" duration-ms="39138">
+    <test started-at="2022-01-07T11:37:18 IST" name="Default test" finished-at="2022-01-07T11:37:18 IST" duration-ms="63">
       <class name="com.testcases.Testcase1">
-        <test-method is-config="true" signature="setupsuite()[pri:0, instance:com.testcases.Testcase1@395b56bb]" started-at="2021-12-13T18:20:07 IST" name="setupsuite" finished-at="2021-12-13T18:20:07 IST" duration-ms="426" status="PASS">
+        <test-method is-config="true" signature="setupsuite()[pri:0, instance:com.testcases.Testcase1@2f05be7f]" started-at="2022-01-07T11:37:17 IST" name="setupsuite" finished-at="2022-01-07T11:37:18 IST" duration-ms="352" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Setting up the test]]>
@@ -35,38 +23,91 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupsuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Testcase1@395b56bb]" started-at="2021-12-13T18:20:08 IST" name="setup" finished-at="2021-12-13T18:20:23 IST" duration-ms="15906" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.testcases.Testcase1@2f05be7f]" started-at="2022-01-07T11:37:18 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1641535638163" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\gkmars\AppData\Local\Temp\testng-eclipse-184878991\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\gkmars\AppData\Local\Temp\testng-eclipse-184878991\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:272)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
-            <line>
-              <![CDATA[Browser started]]>
-            </line>
-            <line>
-              <![CDATA[Testing in progress]]>
-            </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginApp()[pri:0, instance:com.testcases.Testcase1@395b56bb]" started-at="2021-12-13T18:20:23 IST" name="loginApp" finished-at="2021-12-13T18:20:30 IST" duration-ms="6772" status="PASS">
+        <test-method signature="loginApp()[pri:0, instance:com.testcases.Testcase1@2f05be7f]" started-at="2022-01-07T11:37:18 IST" name="loginApp" finished-at="2022-01-07T11:37:18 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\gkmars\AppData\Local\Temp\testng-eclipse-184878991\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\gkmars\AppData\Local\Temp\testng-eclipse-184878991\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:272)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method is-config="true" signature="teardDownMethod(org.testng.ITestResult)[pri:0, instance:com.testcases.Testcase1@395b56bb]" started-at="2021-12-13T18:20:30 IST" name="teardDownMethod" finished-at="2021-12-13T18:20:39 IST" duration-ms="8489" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginApp status=SUCCESS method=Testcase1.loginApp()[pri:0, instance:com.testcases.Testcase1@395b56bb] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="teardDownMethod(org.testng.ITestResult)[pri:0, instance:com.testcases.Testcase1@2f05be7f]" started-at="2022-01-07T11:37:18 IST" name="teardDownMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1641535638203" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Last stage of testing]]>
-            </line>
-            <line>
-              <![CDATA[Testing completed]]>
-            </line>
           </reporter-output>
         </test-method> <!-- teardDownMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.Testcase1@395b56bb]" started-at="2021-12-13T18:20:39 IST" name="tearDown" finished-at="2021-12-13T18:20:47 IST" duration-ms="7911" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.Testcase1@2f05be7f]" started-at="2022-01-07T11:37:18 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1641535638207" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

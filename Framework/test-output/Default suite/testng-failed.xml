@@ -5,6 +5,7 @@
     <classes>
       <class name="com.testcases.Testcase1">
         <methods>
+          <include name="teardDownMethod"/>
           <include name="loginApp"/>
           <include name="setupsuite"/>
           <include name="setup"/>

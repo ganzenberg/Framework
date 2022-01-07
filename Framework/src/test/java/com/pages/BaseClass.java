@@ -26,6 +26,7 @@ public Helper help;
 ExcelDataProvider Excel = new ExcelDataProvider();
 public String s1 = Excel.getStringData("accept", 0, 0);
 public String s2 = Excel.getStringData("accept", 0, 1);
+
 @BeforeSuite
 public void setupsuite()
 {
@@ -38,12 +39,13 @@ Report = new ExtentReports();
 Report.attachReporter(Extent);
 Reporter.log("Test started", true);	
 }
-@Parameters({"browser","TestURL"})
+
+@Parameters({"browser","appUrl"})
 @BeforeClass
-public void setup(String broswer, String TestURL) {
+public void setup(String Browser, String URL) {
 	Reporter.log("Browser started", true);	
-	String Browser = config.getbrowser();
-	String URL = config.getUrl();
+	//String Browser = config.getbrowser();
+	//String URL = config.getUrl();
 	driver = Browserfactory.StartApplication(driver,Browser,URL);
 	Reporter.log("Testing in progress", true);
 }
