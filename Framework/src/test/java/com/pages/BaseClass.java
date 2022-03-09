@@ -3,12 +3,7 @@ import java.io.File;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
-
+import org.testng.annotations.*;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -26,7 +21,7 @@ public Helper help;
 ExcelDataProvider Excel = new ExcelDataProvider();
 public String s1 = Excel.getStringData("accept", 0, 0);
 public String s2 = Excel.getStringData("accept", 0, 1);
-
+public String s3 = "apple12";
 @BeforeSuite
 public void setupsuite()
 {
@@ -34,8 +29,8 @@ Reporter.log("Setting up the test", true);
 config = new ConfigDataProvider();
 help = new Helper();
 String date = help.getCurrentDatetime();
-ExtentSparkReporter Extent = new ExtentSparkReporter(new File(System.getProperty("user.dir")+"./Report/FreeCRM"+date+".html"));
 Report = new ExtentReports();
+ExtentSparkReporter Extent = new ExtentSparkReporter(new File(System.getProperty("user.dir")+"./Report/FreeCRM"+date+".html"));
 Report.attachReporter(Extent);
 Reporter.log("Test started", true);	
 }
@@ -44,8 +39,8 @@ Reporter.log("Test started", true);
 @BeforeClass
 public void setup(String Browser, String URL) {
 	Reporter.log("Browser started", true);	
-	//String Browser = config.getbrowser();
-	//String URL = config.getUrl();
+	//String Browser1 = config.getbrowser();
+	//String URL1 = config.getUrl();
 	driver = Browserfactory.StartApplication(driver,Browser,URL);
 	Reporter.log("Testing in progress", true);
 }

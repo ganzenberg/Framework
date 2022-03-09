@@ -68,7 +68,6 @@
           <systemPropertyVariables>
           <appbrowser>${browser}</appbrowser>
           <appUrl>${appUrl}</appUrl>
-          
           </systemPropertyVariables>
         </configuration>
       </plugin>

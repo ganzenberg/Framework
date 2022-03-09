@@ -16,6 +16,7 @@ public class ConfigDataProvider {
 			FileInputStream FIL = new FileInputStream (src);
 			Pro = new Properties();
 			Pro.load(FIL);
+		
 		}  catch (Exception e) {
 			System.out.println("File not found"+ e.getMessage());
 		}
